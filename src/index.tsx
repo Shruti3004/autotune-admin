@@ -1,14 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import App from "./App";
 import GithubOAuthLogin from "./githubOAuth";
 
-ReactDOM.render(
+import ReactDOM from "react-dom/client";
+
+const element = document.getElementById("root");
+
+const root = ReactDOM.createRoot(element!);
+root.render(
   <Router>
     <Routes>
       <Route path="/" element={<GithubOAuthLogin />} />
     </Routes>
-  </Router>,
-  document.getElementById("root")
+  </Router>
 );

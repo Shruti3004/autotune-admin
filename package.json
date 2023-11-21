@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@octokit/auth-oauth-app": "^7.0.1",
+    "@raphiniert/ra-data-postgrest": "^2.0.0-alpha.3",
     "@supabase/supabase-js": "^2.38.5",
     "ra-data-simple-rest": "^4.16.0",
     "ra-supabase": "^2.0.4",
